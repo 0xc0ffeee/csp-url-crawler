@@ -13,13 +13,11 @@ def get_csp_header():
             line = line.rstrip()
             try:
                 r = get(line)
-
                 if 'Content-Security-Policy' in r.headers:
                     csp_header = r.headers['Content-Security-Policy']
                     get_domains(csp_header)
                 else:
                     print ("No CSP for "+line)
-
             except:
                 pass
     file.close()
