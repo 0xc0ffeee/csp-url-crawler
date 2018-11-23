@@ -3,7 +3,7 @@ from requests import get, exceptions
 import sys
 
 ##Author: 0xc0ffee => https://twitter.com/0xc0ffee_
-##Description: Quick and dirty tool based on https://github.com/yamakira/domains-from-csp to grab a file with URLs and grab domains from their Content-Security Policy
+##Description: Quick and dirty tool based on https://github.com/yamakira/domains-from-csp to grab a file with URLs and query their Content-Security Policy for new domains.
 ##Note: Beta version - not handling exceptions. All URLs in the file need to be preceded by a scheme (http:// or https://) and need to be separated by a new line.
 ##Usage: ./csp_crawler.py <file.txt>
 
